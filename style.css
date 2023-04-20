@@ -6,7 +6,7 @@
 
 #expertise-section {
     width: 100%;
-    height: 500px;
+    height: 450px;
 
 }
 
@@ -37,36 +37,46 @@ hr {
 
 .exp-container {
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
 .expertise-firstRow, .expertise-secondRow {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     text-align: center;
+    margin: 20px;
 }
 
-.expertise-firstRow, .expertise-secondRow {
-    padding: 0px 50px 70px;
+#seperator
+{
+    width: 60%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 1px;
+    background-color: #e6e6e6;
+    border: none;
+    margin:10px;
 }
 
 .expertise-firstRow > div, .expertise-secondRow > div {
     width: 20%;
-    height: 100%;
+    height: 100%; 
+    border-right: 1px solid #e6e6e6;
+}
 
+.expertise-firstRow > div:last-child, .expertise-secondRow > div:last-child {
+    border-right: none;
 }
 
 .expertise-image-container {
     width: 100%;
     height: 50%;
-    margin-bottom: 10px;
 }
 
 
@@ -86,4 +96,104 @@ hr {
     margin-right: auto;
     width: 80%;
     text-align: center;
+}
+
+#team-section {
+    background-image: url("./images/bgk-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 100%;
+    height: 610px;
+}
+
+#team-section h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    color: white;
+}
+
+#team-section > div > p {
+    font-size: 13px;
+    font-family: Playfair Display;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.team-container {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-member-card {
+    width: 200px;
+    height: 70%;
+    margin: 0px 10px;
+    background-color: transperent;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.team-member-image-container {
+    width: 100%;
+    height: 75%;
+    background-color: white;
+}
+
+.team-member-info {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.team-member-info h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.team-member-info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+.hire-container {
+    width: 100%;
+    text-align: center;
+}
+
+.hire-container p {
+    padding-bottom: 15px;
+}
+
+.hire-container > a {
+    text-decoration: none;
+    color: aqua;
+    text-transform: uppercase;
+    border: 1px solid aqua;
+    padding: 10px 15px;
 }
