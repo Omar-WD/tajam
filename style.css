@@ -192,6 +192,7 @@ nav ul li a {
 #watch h2 {
     font-family: 'ROBOTO';
     font-weight: 400;
+}
 
 
 #expertise-section {
@@ -208,13 +209,13 @@ nav ul li a {
     margin-top: 20px;
 }
 
-#expertise-section > div > p {
+#expertise-section>div>p {
     font-size: 14px;
     font-weight: 400;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
-} 
+}
 
 hr {
     width: 3%;
@@ -234,7 +235,8 @@ hr {
     align-items: center;
 }
 
-.expertise-firstRow, .expertise-secondRow {
+.expertise-firstRow,
+.expertise-secondRow {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -242,8 +244,7 @@ hr {
     margin: 20px;
 }
 
-#seperator
-{
+#seperator {
     width: 60%;
     max-width: 800px;
     margin-right: auto;
@@ -251,16 +252,18 @@ hr {
     height: 1px;
     background-color: #e6e6e6;
     border: none;
-    margin:10px;
+    margin: 10px;
 }
 
-.expertise-firstRow > div, .expertise-secondRow > div {
+.expertise-firstRow>div,
+.expertise-secondRow>div {
     width: 20%;
-    height: 100%; 
+    height: 100%;
     border-right: 1px solid #e6e6e6;
 }
 
-.expertise-firstRow > div:last-child, .expertise-secondRow > div:last-child {
+.expertise-firstRow>div:last-child,
+.expertise-secondRow>div:last-child {
     border-right: none;
 }
 
@@ -270,7 +273,8 @@ hr {
 }
 
 
-.expertise-firstRow > div > h2, .expertise-secondRow > div > h2 {
+.expertise-firstRow>div>h2,
+.expertise-secondRow>div>h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     letter-spacing: 1px;
@@ -279,7 +283,8 @@ hr {
     margin-bottom: 10px;
 }
 
-.expertise-firstRow > div > p, .expertise-secondRow > div > p {
+.expertise-firstRow>div>p,
+.expertise-secondRow>div>p {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     margin-left: auto;
@@ -306,7 +311,7 @@ hr {
     color: white;
 }
 
-#team-section > div > p {
+#team-section>div>p {
     font-size: 13px;
     font-family: Playfair Display;
     font-weight: 200;
@@ -331,7 +336,7 @@ hr {
     margin: 0px 10px;
     background-color: transperent;
     border: 0.5px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .team-member-image-container {
@@ -380,7 +385,7 @@ hr {
     padding-bottom: 15px;
 }
 
-.hire-container > a {
+.hire-container>a {
     text-decoration: none;
     color: aqua;
     text-transform: uppercase;
