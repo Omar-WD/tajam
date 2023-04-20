@@ -585,12 +585,12 @@ footer {
 }
 
 #subs input {
-    width: 12vw;
-    height: 6vh;
+    height: 50px;
     background: transparent;
     border: 1px solid lightgray;
-    font-size: 100;
-    text-align: center;
+    font-size: 16px;
+    color: white;
+    padding-left: 10px;
 }
 
 #subs ::placeholder {
@@ -599,20 +599,22 @@ footer {
 
 #subs img {
     margin-left: 0.4vw;
-    width: 4vw;
-    height: 6vh;
+    height: 50px;
     padding: 4% 7%;
     background-color: rgb(255, 255, 255, 0.44);
 }
 
 #socialIcons {
-
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    height: 4vh;
-    width: 85%;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 30px;
+    width: 85%;
+}
+
+#socialIcons img {
+    margin-right: 3px;
 }
 
 #footer2box {
