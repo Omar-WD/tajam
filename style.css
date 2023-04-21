@@ -157,7 +157,6 @@ nav ul li a {
 }
 
 #our-story button {
-
     background-color: transparent;
     border-color: #74c8ce;
     border-style: solid;
@@ -197,20 +196,17 @@ nav ul li a {
 
 #expertise-section {
     width: 100%;
-    height: 450px;
-
+    margin-bottom: 100px;
 }
 
-#expertise-section h1 {
-    font-size: 20px;
+#expertise-section > div > h2 {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 #expertise-section>div>p {
-    font-size: 14px;
     font-weight: 400;
     text-align: center;
     margin-top: 10px;
@@ -218,12 +214,13 @@ nav ul li a {
 }
 
 hr {
-    width: 3%;
+    width: 4%;
     margin-right: auto;
     margin-left: auto;
     height: 0.5px;
     background-color: gray;
     border: none;
+    margin-bottom: 20px;
 }
 
 .exp-container {
@@ -273,14 +270,14 @@ hr {
 }
 
 
-.expertise-firstRow>div>h2,
-.expertise-secondRow>div>h2 {
+.expertise-firstRow>div>h3,
+.expertise-secondRow>div>h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     letter-spacing: 1px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin: 20px;
 }
 
 .expertise-firstRow>div>p,
@@ -299,20 +296,19 @@ hr {
     background-repeat: no-repeat;
     background-position: left;
     width: 100%;
-    height: 610px;
+    height: 700px;
+    padding-bottom: 150px;
 }
 
-#team-section h1 {
-    font-size: 20px;
+#team-section h2 {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 50px;
     color: white;
+    padding-top: 100px;
 }
 
 #team-section>div>p {
-    font-size: 13px;
     font-family: Playfair Display;
     font-weight: 200;
     text-align: center;
@@ -323,7 +319,7 @@ hr {
 
 .team-container {
     width: 100%;
-    height: 60%;
+    height: 55%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -332,11 +328,10 @@ hr {
 
 .team-member-card {
     width: 200px;
-    height: 70%;
+    height: 90%;
     margin: 0px 10px;
     background-color: transperent;
     border: 0.5px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .team-member-image-container {
@@ -355,7 +350,7 @@ hr {
     background-color: transparent;
 }
 
-.team-member-info h2 {
+.team-member-info h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
@@ -379,13 +374,14 @@ hr {
 .hire-container {
     width: 100%;
     text-align: center;
+    padding-top: 10px;
 }
 
 .hire-container p {
     padding-bottom: 15px;
 }
 
-.hire-container>a {
+.hire-container > a {
     text-decoration: none;
     color: aqua;
     text-transform: uppercase;
@@ -393,14 +389,17 @@ hr {
     padding: 10px 15px;
 }
 
-#ContactUs {
+.hire-container > a:hover {
+    background-color: aqua;
+    color: black;
+}
 
+#ContactUs {
     display: flex;
     flex-direction: row;
     height: auto;
     width: 60%;
     margin: 0% auto 0% auto;
-
 }
 
 #contactForm {
