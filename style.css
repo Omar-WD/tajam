@@ -214,7 +214,7 @@ nav ul li a {
 }
 
 hr {
-    width: 4%;
+    width: 60px;
     margin-right: auto;
     margin-left: auto;
     height: 0.5px;
@@ -242,8 +242,7 @@ hr {
 }
 
 #seperator {
-    width: 60%;
-    max-width: 800px;
+    width: 60px;
     margin-right: auto;
     margin-left: auto;
     height: 1px;
@@ -314,7 +313,7 @@ hr {
     font-weight: 200;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: white;
 }
 
@@ -669,17 +668,9 @@ footer {
         height: 950px;
     }
 
-    .team-container {
-        width: 100%;
-        height: 50%;
-    }
-    
     .team-member-card {
-        width: 200px;
-        height: 80%;
+        height: 60%;
         margin: 15px 10px;
-        background-color: transperent;
-        border: 0.5px solid rgba(255, 255, 255, 0.5);
     } 
 
     .hire-container p {
