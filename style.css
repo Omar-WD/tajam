@@ -214,13 +214,13 @@ nav ul li a {
 }
 
 hr {
-    width: 4%;
+    width: 60px;
     margin-right: auto;
     margin-left: auto;
     height: 0.5px;
     background-color: gray;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .exp-container {
@@ -242,8 +242,7 @@ hr {
 }
 
 #seperator {
-    width: 60%;
-    max-width: 800px;
+    width: 60px;
     margin-right: auto;
     margin-left: auto;
     height: 1px;
@@ -273,17 +272,18 @@ hr {
 .expertise-firstRow>div>h3,
 .expertise-secondRow>div>h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    letter-spacing: 1px;
+    font-size: 13px;
+    letter-spacing: 0.2px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .expertise-firstRow>div>p,
 .expertise-secondRow>div>p {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -297,7 +297,7 @@ hr {
     background-position: left;
     width: 100%;
     height: 700px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
 }
 
 #team-section h2 {
@@ -309,11 +309,11 @@ hr {
 }
 
 #team-section>div>p {
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-weight: 200;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: white;
 }
 
@@ -324,6 +324,7 @@ hr {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .team-member-card {
@@ -378,19 +379,22 @@ hr {
 }
 
 .hire-container p {
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 25px;
 }
 
 .hire-container > a {
     text-decoration: none;
-    color: aqua;
+    color: #74c8ce;
     text-transform: uppercase;
-    border: 1px solid aqua;
-    padding: 10px 15px;
+    border: 1px solid #74c8ce;
+    border-radius: 2px;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hire-container > a:hover {
-    background-color: aqua;
+    background-color: #74c8ce;
     color: black;
 }
 
@@ -668,7 +672,46 @@ cursor: pointer;
     text-align: left;
 }
 
-@media only screen and (max-width:700px) {
+
+@media only screen and (max-width: 1024px) {
+
+    .expertise-firstRow>div,
+    .expertise-secondRow>div {
+        width: 22%;
+    }
+
+}
+
+
+@media only screen and (max-width: 896px) {
+
+    #team-section {
+        height: 950px;
+    }
+
+    .team-member-card {
+        height: 60%;
+        margin: 15px 10px;
+    } 
+
+    .hire-container p {
+        padding-top: 160px;
+    }
+
+    .expertise-firstRow>div,
+    .expertise-secondRow>div {
+        width: 27%;
+    }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .expertise-firstRow>div,
+    .expertise-secondRow>div {
+        width: 100%;
+    }
 
     #ContactUs{
         width: 90%;
