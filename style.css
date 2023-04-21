@@ -436,20 +436,26 @@ hr {
 }
 
 #contactForm ::placeholder {
-
     color: #6b4c4c7e;
     font-size: 110%;
     padding-left: 5%;
 }
 
 #contactForm button {
-    height: 8%;
-    width: 30%;
-    border: 1.3px solid rgb(24, 204, 204);
-    color: rgb(24, 204, 204);
-    background-color: white;
+    background-color: transparent;
+    border-color: #74c8ce;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    color: #74c8ce;
     margin-bottom: 15%;
-    text-shadow: 1px 0.8px 1px;
+    padding: 10px;
+    width: 35%;
+}
+#contactForm button:hover{
+    background-color: #74c8ce;
+    border-color: white;
+    color: white;
 }
 
 #happyClients {
@@ -552,22 +558,22 @@ footer {
     grid-template-columns: auto auto;
     width: 100%;
     height: auto;
+    justify-items: center;
 }
 
-#addressblock object {
-    margin-right: 0%;
+#addressblock a {
     height: 2.3vh;
     width: 70%;
+    inline-size: auto;
 }
 
 #addressblock p {
-    width: 90%;
+    width: 80%;
 }
 
 #SocMedia {
     display: flex;
     flex-direction: column;
-    width: 80%;
 }
 
 #communication {
@@ -603,19 +609,28 @@ footer {
     background-color: rgb(255, 255, 255, 0.44);
 }
 
+#subs img:hover {
+background-color: white;
+cursor: pointer;
+}
 #socialIcons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 30px;
-    width: 85%;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 #socialIcons img {
     margin-right: 3px;
 }
 
+#socialIcons img:hover {
+    margin: auto;
+    cursor: pointer;
+}
 #footer2box {
     display: inline-flex;
     flex-direction: row;
@@ -641,6 +656,12 @@ footer {
     margin-right: 5%;
     padding: 0% 2% 0% 1%;
 }
+#ft2links a:hover{
+    color: white;
+    text-decoration: underline;
+    font-size: 100%;
+}
+
 
 #© {
     width: 30%;
@@ -649,60 +670,133 @@ footer {
 
 @media only screen and (max-width:700px) {
 
-    #footer1box {
-        margin: 0% 3% 0% 2%;
-
-    }
-
-    #addressblock {
-        display: flexbox;
-        margin-bottom: 5%;
-        justify-content: space-around;
-        align-content: space-between space-between;
-    }
-
-    #addressblock p {
-        margin-top: 5%;
+    #ContactUs{
+        width: 90%;
     }
 
     #compLogo {
-        left: 0%;
         display: none;
     }
-
-    #logoSection span {
-        left: 0%;
-        height: 35%;
-        width: fit-content;
-        display: none;
-    }
-
     #shortText {
-        width: 95%;
-        text-align: justify;
         display: none;
     }
-
-    #socialIcons {
-
-        display: inline-block;
-        height: 5vh;
-        width: 200%;
-        justify-content: space-around;
-    }
-
-    #socialIcons img {
-        padding: 3%;
-    }
-
-    #footer2box {
-        display: none;
-    }
-
     #footer1box span {
         display: none;
     }
+    #communication{
+        width: 214px;
 
-    #subs {
-        display: none;
     }
+    #subs{
+        height: 30px;
+        margin-bottom: 30px;
+    }
+    #subs img{
+        height: 30px;
+        margin-top: 10px;
+    }
+    #subs input{
+        width: 150px;
+        height: 30px;
+        font-size: 13px;
+        padding-left: 3px;
+        margin-right: 3px;
+        margin-top: 10px;
+    }
+    #contactForm{
+        height: auto;
+        justify-content: space-evenly;
+    }
+    #contactForm h3{
+        font-size: 15px;
+    }
+    #contactForm input{
+        height: 28px;
+        padding-left: 5px;
+    }
+    #contactForm textarea{
+        height: 220px;
+        padding-left: 5px;
+    }
+    #contactForm button {
+        height: 30px;
+        width: 100px;
+        margin-bottom: 17%;
+    }
+    #contactForm ::placeholder {
+        color: #6b4c4c7e;
+        font-size: 80%;
+        padding-left: 5%;
+    }
+    #happyClients{
+        margin-top: 0%;
+        margin-bottom: 3px;
+    }
+    #happyClients h3 {
+        padding-left: 10%;
+        font-size: 15px;
+        width: 104%;
+        align-self: self-end;
+
+    }
+    footer{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    #footer1box {
+        width: 100%;
+        height: auto;
+        margin: 2% 2% 2% 2%;
+    }
+    #socialIcons {
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        height: auto;
+        width: auto;
+        position: relative;
+        justify-content: space-evenly;
+    }
+    #socialIcons img {
+        padding: 3%;
+    }
+    #footer2box {
+        display: flex;
+        flex-direction: column;
+        height: 70px;
+        width: 100%;
+        margin-top:30px;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
+        bottom: 0%;
+    }
+    #ft2links{
+        height: 50px;
+        width: 100%;
+        font-size: small;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #©{
+        font-size: small;
+        text-align: center;
+        align-self: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding-top: 7px;
+    }
+    #addressblock{
+        font-size: small;
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+
+    }
+    #addressblock p{
+        line-height: 15px;
+    }
+    
+}
