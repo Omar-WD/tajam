@@ -714,9 +714,71 @@ cursor: pointer;
     }
 
     #ContactUs{
-        width: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
     }
 
+    #contactForm{
+        height: auto;
+        width: 80%;
+        justify-content: space-evenly;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contactForm h3{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    #contactForm input{
+        height: 28px;
+        padding-left: 10px;
+        margin: 5px 0px;
+        width: 70%;
+    }
+    #contactForm textarea{
+        height: 220px;
+        padding-left: 5px;
+    }
+    #contactForm button {
+        height: 30px;
+        width: 100px;
+        margin-bottom: 10%;
+        margin-top: 10px;
+    }
+    #contactForm ::placeholder {
+        color: #6b4c4c7e;
+        font-size: 80%;
+        padding-left: 5%;
+    }
+    #happyClients{
+
+        height: 64px;
+        width: 100%;
+        margin: auto 0px auto 0px;
+        grid-template-columns: auto auto auto auto auto;
+        background-color: gold;
+        padding: 3px 4px;
+    }
+    #happyClients h3 {
+        display: none;
+    }
+    footer{
+        width: 100%;
+        height: 414px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer1box {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 96%;
+        height: auto;
+        margin: 2% 2% 2% 2%;
+    }
     #compLogo {
         display: none;
     }
@@ -726,78 +788,46 @@ cursor: pointer;
     #footer1box span {
         display: none;
     }
-    #communication{
-        width: 214px;
+    #addressblock{
+        font-size: small;
+        width: 220px;
+        height: 64px;
+        margin-top: 21px;
+        align-self: center;
+    }
+    #addressblock p {
+        width: 82%;
+        line-height: 15px;
+    }
 
+    #communication{
+        width: 358px;
+        margin: 0px auto;
     }
     #subs{
         height: 30px;
         margin-bottom: 30px;
+        width: 246px;
+        align-self: center;
     }
     #subs img{
         height: 30px;
         margin-top: 10px;
+        margin-left: 1px;
+        padding: 2% 3%;
     }
     #subs input{
-        width: 150px;
+        width: 195px;
         height: 30px;
         font-size: 13px;
-        padding-left: 3px;
+        padding-left: 7px;
         margin-right: 3px;
         margin-top: 10px;
     }
-    #contactForm{
-        height: auto;
-        justify-content: space-evenly;
-    }
-    #contactForm h3{
-        font-size: 15px;
-    }
-    #contactForm input{
-        height: 28px;
-        padding-left: 5px;
-    }
-    #contactForm textarea{
-        height: 220px;
-        padding-left: 5px;
-    }
-    #contactForm button {
-        height: 30px;
-        width: 100px;
-        margin-bottom: 17%;
-    }
-    #contactForm ::placeholder {
-        color: #6b4c4c7e;
-        font-size: 80%;
-        padding-left: 5%;
-    }
-    #happyClients{
-        margin-top: 0%;
-        margin-bottom: 3px;
-    }
-    #happyClients h3 {
-        padding-left: 10%;
-        font-size: 15px;
-        width: 104%;
-        align-self: self-end;
-
-    }
-    footer{
-        width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-    }
-    #footer1box {
-        width: 100%;
-        height: auto;
-        margin: 2% 2% 2% 2%;
-    }
     #socialIcons {
-
         display: grid;
         grid-template-columns: auto auto auto;
-        height: auto;
+        height: 91px;
         width: auto;
         position: relative;
         justify-content: space-evenly;
@@ -810,36 +840,25 @@ cursor: pointer;
         flex-direction: column;
         height: 70px;
         width: 100%;
-        margin-top:30px;
+        margin-top:6px;
         align-items: center;
         align-self: center;
         justify-content: center;
         bottom: 0%;
     }
     #ft2links{
-        height: 50px;
+        height: auto;
         width: 100%;
         font-size: small;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
     #©{
-        font-size: small;
+        font-size: xx-small;
         text-align: center;
         align-self: center;
         flex-wrap: nowrap;
         width: 100%;
         padding-top: 7px;
     }
-    #addressblock{
-        font-size: small;
-        width: auto;
-        height: auto;
-        margin-top: 10px;
-
-    }
-    #addressblock p{
-        line-height: 15px;
-    }
-    
 }
