@@ -402,8 +402,8 @@ hr {
     display: flex;
     flex-direction: row;
     height: auto;
-    width: 60%;
-    margin: 0% auto 0% auto;
+    width: 66%;
+    margin: 5% auto 5% auto;
 }
 
 #contactForm {
@@ -413,7 +413,7 @@ hr {
     flex-direction: column;
     justify-content: space-around;
     margin-right: 2%;
-    margin-top: 5%;
+
 }
 
 #contactForm h3 {
@@ -452,7 +452,6 @@ hr {
     border-radius: 2px;
     border-width: 1px;
     color: #74c8ce;
-    margin-bottom: 15%;
     padding: 10px;
     width: 35%;
 }
@@ -464,11 +463,11 @@ hr {
 
 #happyClients {
     height: 60vh;
-    width: 50%;
+    width: 48%;
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 6%;
-    padding-bottom: 3%;
+    grid-template-rows: max-content;
+    margin-top: 16px;
 }
 
 #happyClients h3 {
@@ -500,7 +499,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 50vh;
+    height: 350px;
     width: 100%;
     color: white;
     font-weight: lighter;
@@ -513,12 +512,11 @@ footer {
 #footer1box {
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 60%;
+    width: 66%;
     height: 26vh;
-    column-gap: 0vw;
-    letter-spacing: 3%;
+    column-gap: 3%;
     line-height: 3vh;
-    margin: 5% 21% 0% 21%;
+    margin: 5% auto 3% auto;
 }
 
 #logoSection {
@@ -594,12 +592,13 @@ footer {
 }
 
 #subs input {
-    height: 50px;
+    height: 45px;
     background: transparent;
     border: 1px solid lightgray;
     font-size: 16px;
     color: white;
-    padding-left: 10px;
+    padding-left: 4px;
+    width: 75%;
 }
 
 #subs ::placeholder {
@@ -607,10 +606,11 @@ footer {
 }
 
 #subs img {
-    margin-left: 0.4vw;
-    height: 50px;
+    margin-left: 2%;
+    height: 45px;
     padding: 4% 7%;
     background-color: rgb(255, 255, 255, 0.44);
+    width: 23%;
 }
 
 #subs img:hover {
@@ -642,7 +642,7 @@ cursor: pointer;
     justify-content: space-between;
     flex-wrap: nowrap;
     height: 3vh;
-    margin: 2% 21% 2% 21%;
+    margin: 2% auto 2% auto;
 }
 
 #ft2links {
@@ -668,8 +668,8 @@ cursor: pointer;
 
 
 #© {
-    width: 30%;
-    text-align: left;
+    width: 40%;
+    text-align: end;
 }
 
 
@@ -705,19 +705,85 @@ cursor: pointer;
 
 
 }
-
 @media only screen and (max-width: 800px) {
 
     .expertise-firstRow>div,
     .expertise-secondRow>div {
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 1190px) and (min-width:1020px){
+    #ContactUs, #footer1box, #footer2box{
+        width: 70%;
+        column-gap: 2%;
+    }
+    footer{
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width: 1019px) and (min-width:830px){
+    #ContactUs, #footer1box, #footer2box{
+        width: 90%;
+        column-gap: 2%;
+    }
+    footer{
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width: 829px) and (min-width:790px){
+    #ContactUs, #footer1box, #footer2box{
+        width: 95%;
+        column-gap: 3%;
+    }
+    
+    footer{
+        height: 360px;
+
+    }
+}
+@media only screen and (max-width: 789px) and (min-width:680px){
+    #ContactUs, #footer1box, #footer2box{
+        width: 95%;
+        
+    }
+
+    footer{
+        height: 360px;
+    }
+    #footer1box {
+        column-gap: 0.5%;
+
+    }
+    #footer2box {
+margin-bottom: 3%;
+    }
+    #ft2links {
+         width: 55%;
+    }
+    #©{
+        width: 44%;
+    }
+
+}
+@media only screen and (min-width:680px){
+#happyClients  img{
+    inline-size: 80px;
+    margin: 0px 3px;
+}
+}
+@media only screen and (max-width: 679px) {
+    #ContactUs, #footer1box, #footer2box{
+        width: 90%;
+    }
 
     #ContactUs{
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 5px;
+        margin: 5% auto 0% auto;
     }
 
     #contactForm{
@@ -754,7 +820,6 @@ cursor: pointer;
         padding-left: 5%;
     }
     #happyClients{
-
         height: 64px;
         width: 100%;
         margin: auto 0px auto 0px;
@@ -765,9 +830,13 @@ cursor: pointer;
     #happyClients h3 {
         display: none;
     }
+    #happyClients  img{
+        inline-size: 50px;
+        margin: 3px 3px;
+    }
     footer{
         width: 100%;
-        height: 414px;
+        height: 330px;
         display: flex;
         flex-direction: column;
     }
@@ -783,7 +852,7 @@ cursor: pointer;
         display: none;
     }
     #shortText {
-        display: none;
+        display: none ;
     }
     #footer1box span {
         display: none;
