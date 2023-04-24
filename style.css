@@ -185,6 +185,12 @@ nav ul li a:hover {
     margin-top: 50px;
 }
 
+@media only screen and (max-width:800px) {
+    .herotext {
+        width: 80vw;
+    }
+}
+
 .solid {
     width: 60px;
     background-color: #74c8ce;
@@ -225,6 +231,8 @@ nav ul li a:hover {
 #our-story {
     width: 100%;
 }
+
+
 
 #our-story .story {
     display: flex;
@@ -281,6 +289,21 @@ nav ul li a:hover {
     color: black;
 }
 
+@media only screen and (max-width:800px) {
+    #our-story {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        justify-content: center;
+    }
+
+    .story img {
+        height: 300px;
+        padding-top: 50px;
+        margin: 0 50px 0 50px;
+    }
+
+}
 
 #watch {
     background-image: url("./images/bgk-middle.png");
@@ -636,11 +659,8 @@ hr {
 footer {
     background-image: url("./images/bgk-footer.png");
     background-size: cover;
-    left: 0;
-    right: 0;
     bottom: 0;
-    height: 350px;
-    width: 100%;
+
     color: white;
     font-weight: lighter;
     font-size: 90%;
