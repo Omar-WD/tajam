@@ -563,8 +563,8 @@ hr {
 #ContactUs {
     display: flex;
     flex-direction: row;
-    height: auto;
-    width: 66%;
+    height: 644;
+    width: 75%;
     margin: 5% auto 5% auto;
 }
 
@@ -660,7 +660,8 @@ footer {
     background-image: url("./images/bgk-footer.png");
     background-size: cover;
     bottom: 0;
-
+    height: auto;
+    width: 100%;
     color: white;
     font-weight: lighter;
     font-size: 90%;
@@ -877,11 +878,8 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1190px) and (min-width:1020px) {
-
-    #ContactUs,
-    #footer1box,
-    #footer2box {
+/*@media only screen and (max-width: 1190px) and (min-width:1020px){
+    #ContactUs, #footer1box, #footer2box{
         width: 70%;
         column-gap: 2%;
     }
@@ -933,42 +931,120 @@ footer {
         max-width: 100%;
         max-height: 100%;
     }
-}
+}*/
 
-@media only screen and (max-width: 789px) and (min-width:680px) {
+@media only screen and (max-width: 999px) and (min-width:680px){
+    
+        footer {
+            height: auto;
+            display: flex;
+            flex-direction: column
+        }
+        #footer1box {
+            column-gap: 0.5%;
+            padding-bottom: 3px;
+            width: 85%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            column-gap: 3%;
+            line-height: 3vh;
+            margin: 3% auto 3% auto;
+            align-items: center;
+        }
+        #footer1box span{
+            display: none;
+        }
+        #logoSection {
+            display: inline-flex;
+            grid-template-columns: auto auto;
+            width: 30%;
+            align-content: stretch;
+            justify-content: center;
+            align-items: flex-end;
+            justify-items: center;
+        }
 
-    #ContactUs,
-    #footer1box,
-    #footer2box {
-        width: 95%;
+        #compLogo {
+            margin-right: inherit;
+            height: 55px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+        #shortText {
+            font-family: Roboto;
+            width: 65%;
+            height: 80px;
+            text-align: center;
+            margin: 1% 0%;
+        }
+        #addressblock {
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 43%;
+            height: auto;
+            align-items: center;
+            justify-items: center;
+        }
+        #addressblock p {
+            width: 80%;
+            padding: 7px 0px;
+        }
+        communication {
+            display: flex;
+            flex-direction: column;
+        }
+        #subs {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: flex-start;
+            margin: 19px 0px;
+        }
+        #subs input {
+            height: 45px;
+            background: transparent;
+            border: 1px solid lightgray;
+            font-size: 16px;
+            color: white;
+            padding-left: 4px;
+            width: 75%;
+        }
+        #subs img {
+            margin-left: 2%;
+            height: 45px;
+            padding: 4% 7%;
+            background-color: rgb(255, 255, 255, 0.44);
+            width: 23%;
+        }
+        #footer2box {
+            margin-bottom: 1%;
+            width: 85%;
+            height: auto;
+            display:contents;
+        }
+        #ft2links {
+            width: 56%;
+            text-align: center;
+            margin-bottom: 21px;
+            margin-top: 21px;
+            align-self: center;
+            display: flex;
+            justify-content: space-around;
+        }
+        #ft2links a{
+            margin-right: 0px;
+            padding: 0px 4px;
+        }
 
-    }
-
-    footer {
-        height: 360px;
-    }
-
-    #footer1box {
-        column-gap: 0.5%;
-
-    }
-
-    #footer2box {
-        margin-bottom: 3%;
-    }
-
-    #ft2links {
-        width: 55%;
-    }
-
-    #© {
-        width: 44%;
-    }
-
-    #happyClients img {
-        max-width: 100%;
-        max-height: 100%;
-    }
+        #© {
+            width: 44%;
+            font-size: x-small;
+            text-align: center;
+            align-self: center;
+            margin-bottom: 13px ;
+            height: auto;
+        }
 
 }
 
@@ -987,7 +1063,6 @@ footer {
     #footer1box,
     #footer2box {
         width: 90%;
-        font-family: Roboto;
     }
 
     #ContactUs {
@@ -1037,25 +1112,101 @@ footer {
         padding-left: 5%;
     }
     #happyClients{
-        height: 55px;
+        height: 60px;
         width: 100%;
         margin: auto 0px 0px 0px;
         grid-template-columns: auto auto auto auto auto;
         padding: 5px 5px;
         align-content: space-evenly;
     }
-
-    #happyClients img{
-        margin-bottom: 10px;
-        inline-size: 44px;
-    }
     #happyClients h3 {
         display: none;
+    }
+    #happyClients #a {
+        width: 51px;
+        height: 16px;
+        margin: auto auto;
+        max-width:100%;
+        max-height:100%;
+        padding: 4px;
+
+    }
+    #happyClients #b {
+        width: 56px;
+        height: 16px;
+        margin: auto auto;
+        max-width:100%;
+        max-height:100%;
+        padding: 4px;
+    }
+    #happyClients #c {
+        width: 69px;
+        height: 16px;
+        margin: auto auto;
+        max-width:100%;
+        max-height:100%;
+        padding: 2px;
+    }
+    #happyClients #d {
+        width: 53px;
+        height: 16px;
+        margin: auto auto;
+        max-width:100%;
+        max-height:100%;
+        padding: 3px;
+    }
+    #happyClients #e {
+        width: 70px;
+        height: 16px;
+        margin: auto auto;
+        max-width:100%;
+        max-height:100%;
+        padding: 3px;
+    }
+    #happyClients #f {
+        width: 50px;
+        height: 18px;
+        margin: auto auto;
+        max-width:100%;
+        max-height:100%;
+        padding: 2px;
+    }
+    #happyClients #g {
+        width: 50px;
+        height: 32px;
+        margin: auto auto;
+        max-width:100%;
+        max-height:100%;
+        padding: 2px;
+    }
+    #happyClients #h {
+        width: 50px;
+        height: 23px;
+        margin: auto auto;
+        max-width:100%;
+        max-height:100%;
+        padding: 1px;
+    }
+    #happyClients #i {
+        width: 55px;
+        height: 28px;
+        margin: auto auto;
+        max-width:100%;
+        max-height:100%;
+        padding: 3px;
+    }
+    #happyClients #j {
+        width: 55px;
+        height: 28px;
+        margin: auto auto;
+        max-width:100%;
+        max-height:100%;
+        padding: 4px;
     }
     footer{
 
         width: 100%;
-        height: auto;
+        height: 338px;
         display: flex;
         flex-direction: column;
     }
@@ -1065,7 +1216,7 @@ footer {
         flex-direction: column-reverse;
         width: 96%;
         height: auto;
-        margin: 5% 2% 5% 2%;
+        margin: 2% 2% 2% 2%;
     }
 
     #compLogo {
@@ -1090,12 +1241,12 @@ footer {
 
     #addressblock p {
         width: 82%;
-        line-height: 16px;
+        line-height: 15px;
     }
 
     #communication {
         width: 358px;
-        margin: 0px auto;
+        margin: 10px auto 0px auto;
     }
 
     #subs {
@@ -1109,7 +1260,7 @@ footer {
         height: 30px;
         margin-top: 10px;
         margin-left: 1px;
-        padding: 2% 3%;
+        padding: 3% 7% 3% 7%;
     }
 
     #subs input {
@@ -1137,11 +1288,10 @@ footer {
     #footer2box {
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: 87px;
         width: 100%;
 
         margin-top:6px;
-        margin-bottom: 2%;
         align-items: center;
         align-self: center;
         justify-content: center;
@@ -1153,12 +1303,12 @@ footer {
         width: 100%;
         font-size: small;
         text-align: center;
-        display: contents;
+        margin-bottom: 16px;
+        margin-top: 8px;
     }
-    #ft2links a{
-        padding: 2px;
-        margin: 0px;
-        line-height: 20px;
+    #ft2links #privacyLink {
+        padding-right: 0%;
+        margin-right: 0%;
     }
 
     #© {
@@ -1167,6 +1317,15 @@ footer {
         align-self: center;
         flex-wrap: nowrap;
         width: 100%;
-        padding-top: 6%;
+        padding-top: 7px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    #ContactUs {
+        width: 85%;
+    }
+    #happyClients h3 {
+        padding-left: 8%;
     }
 }
