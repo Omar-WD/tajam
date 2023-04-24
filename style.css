@@ -933,6 +933,7 @@ margin-bottom: 3%;
 @media only screen and (max-width: 679px) {
     #ContactUs, #footer1box, #footer2box{
         width: 90%;
+        font-family: Roboto;
     }
 
     #ContactUs{
@@ -977,92 +978,23 @@ margin-bottom: 3%;
         padding-left: 5%;
     }
     #happyClients{
-        height: 80px;
+        height: 55px;
         width: 100%;
-        margin: auto 0px 3px 0px;
+        margin: auto 0px 0px 0px;
         grid-template-columns: auto auto auto auto auto;
-        background-color: gold;
         padding: 5px 5px;
         align-content: space-evenly;
+    }
+    #happyClients img{
+        margin-bottom: 10px;
+        inline-size: 44px;
     }
     #happyClients h3 {
         display: none;
     }
-    #happyClients #a {
-        width: 51px;
-        height: 16px;
-        margin: auto auto;
-        max-width:100%;
-        max-height:100%;
-        padding: 3px;
-
-    }
-    #happyClients #b {
-        width: 56px;
-        height: 16px;
-        margin: auto auto;
-        max-width:100%;
-        max-height:100%;
-    }
-    #happyClients #c {
-        width: 69px;
-        height: 16px;
-        margin: auto auto;
-        max-width:100%;
-        max-height:100%;
-    }
-    #happyClients #d {
-        width: 53px;
-        height: 16px;
-        margin: auto auto;
-        max-width:100%;
-        max-height:100%;
-    }
-    #happyClients #e {
-        width: 70px;
-        height: 16px;
-        margin: auto auto;
-        max-width:100%;
-        max-height:100%;
-    }
-    #happyClients #f {
-        width: 50px;
-        height: 18px;
-        margin: auto auto;
-        max-width:100%;
-        max-height:100%;
-    }
-    #happyClients #g {
-        width: 50px;
-        height: 32px;
-        margin: auto auto;
-        max-width:100%;
-        max-height:100%;
-    }
-    #happyClients #h {
-        width: 50px;
-        height: 23px;
-        margin: auto auto;
-        max-width:100%;
-        max-height:100%;
-    }
-    #happyClients #i {
-        width: 55px;
-        height: 28px;
-        margin: auto auto;
-        max-width:100%;
-        max-height:100%;
-    }
-    #happyClients #j {
-        width: 55px;
-        height: 28px;
-        margin: auto auto;
-        max-width:100%;
-        max-height:100%;
-    }
     footer{
         width: 100%;
-        height: 330px;
+        height: auto;
         display: flex;
         flex-direction: column;
     }
@@ -1072,7 +1004,7 @@ margin-bottom: 3%;
         flex-direction: column-reverse;
         width: 96%;
         height: auto;
-        margin: 2% 2% 2% 2%;
+        margin: 5% 2% 5% 2%;
     }
     #compLogo {
         display: none;
@@ -1092,7 +1024,7 @@ margin-bottom: 3%;
     }
     #addressblock p {
         width: 82%;
-        line-height: 15px;
+        line-height: 16px;
     }
 
     #communication{
@@ -1133,9 +1065,10 @@ margin-bottom: 3%;
     #footer2box {
         display: flex;
         flex-direction: column;
-        height: 70px;
+        height: auto;
         width: 100%;
         margin-top:6px;
+        margin-bottom: 2%;
         align-items: center;
         align-self: center;
         justify-content: center;
@@ -1146,7 +1079,12 @@ margin-bottom: 3%;
         width: 100%;
         font-size: small;
         text-align: center;
-        margin-bottom: 8px;
+        display: contents;
+    }
+    #ft2links a{
+        padding: 2px;
+        margin: 0px;
+        line-height: 20px;
     }
     #©{
         font-size: xx-small;
@@ -1154,6 +1092,6 @@ margin-bottom: 3%;
         align-self: center;
         flex-wrap: nowrap;
         width: 100%;
-        padding-top: 7px;
+        padding-top: 6%;
     }
 }
