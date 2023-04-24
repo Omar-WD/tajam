@@ -2,7 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+
 }
+
 
 
 a {
@@ -13,6 +16,7 @@ button {
     cursor: pointer;
 }
 
+/* Alina Start */
 .navbar {
     position: absolute;
     display: flex;
@@ -48,6 +52,7 @@ button {
 }
 
 
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -56,6 +61,7 @@ nav ul {
 
 nav ul li {
     margin: 0 10px 0 10px;
+
 }
 
 nav ul li a {
@@ -65,6 +71,100 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+nav ul li a:hover {
+    color: #7bbbd5;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media only screen and (max-width:800px) {
+    .hamburger-menu {
+        display: inline;
+    }
+
+    .hamburger-menu a {
+        color: white;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+/* HamburgerNAV Start */
+
+/* @media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+}
+
+.hamburger-menu {
+    display: none;
+    margin-right: 20px;
+}
+
+.hamburger-menu a {
+    display: block;
+    font-size: 20px;
+    color: white;
+}
+
+.hamburger-menu i {
+    margin: 0 5px 0 0;
+}
+
+.hamburger-menu input {
+    display: none;
+}
+
+.hamburger-menu label {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger-menu label i {
+    font-size: 30px;
+    color: white;
+}
+
+.hamburger-menu ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.hamburger-menu ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.hamburger-menu ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+} */
+
+/* HamburgerNAV End */
 
 .hero {
     background-image: url("./images/bgk-header.png");
@@ -87,7 +187,7 @@ nav ul li a {
 
 .solid {
     width: 60px;
-    border-color: #74c8ce;
+    background-color: #74c8ce;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -113,7 +213,13 @@ nav ul li a {
     border-width: 1px;
     color: #74c8ce;
     margin: 50px;
-    padding: 10px;
+    padding: 12px;
+    font-weight: 600;
+}
+
+.herobutton:hover {
+    background-color: #74c8ce;
+    color: black;
 }
 
 #our-story {
@@ -164,8 +270,14 @@ nav ul li a {
     border-width: 1px;
     color: #74c8ce;
     margin-top: 20px;
-    padding: 10px;
     margin-bottom: 50px;
+    padding: 12px;
+    font-weight: 600;
+}
+
+#our-story button:hover {
+    background-color: #74c8ce;
+    color: black;
 }
 
 
@@ -193,13 +305,38 @@ nav ul li a {
     font-weight: 400;
 }
 
+.totop {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    background-color: #74c8ce;
+    color: #fff;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.totop img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Alina Ende */
+
 
 #expertise-section {
     width: 100%;
     margin-bottom: 100px;
 }
 
-#expertise-section > div > h2 {
+#expertise-section>div>h2 {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -383,7 +520,7 @@ hr {
     padding-bottom: 25px;
 }
 
-.hire-container > a {
+.hire-container>a {
     text-decoration: none;
     color: #74c8ce;
     text-transform: uppercase;
@@ -392,6 +529,7 @@ hr {
     padding: 12px;
     font-family: 'Roboto', sans-serif;
 }
+
 
 .hire-container > a:hover {
     background-color: #74c8ce;
