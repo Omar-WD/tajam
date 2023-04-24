@@ -721,6 +721,10 @@ cursor: pointer;
     footer{
         height: 360px;
     }
+    #happyClients  img{
+        max-width:100%;
+        max-height:100%;
+    }
 }
 
 @media only screen and (max-width: 1019px) and (min-width:830px){
@@ -730,6 +734,10 @@ cursor: pointer;
     }
     footer{
         height: 360px;
+    }
+    #happyClients  img{
+        max-width:100%;
+        max-height:100%;
     }
 }
 
@@ -742,6 +750,10 @@ cursor: pointer;
     footer{
         height: 360px;
 
+    }
+    #happyClients  img{
+        max-width:100%;
+        max-height:100%;
     }
 }
 @media only screen and (max-width: 789px) and (min-width:680px){
@@ -766,12 +778,18 @@ margin-bottom: 3%;
     #©{
         width: 44%;
     }
+    #happyClients  img{
+        max-width:100%;
+        max-height:100%;
+    }
 
 }
 @media only screen and (min-width:680px){
 #happyClients  img{
     inline-size: 80px;
     margin: 0px 3px;
+    max-width:100%;
+    max-height:100%;
 }
 }
 @media only screen and (max-width: 679px) {
@@ -833,6 +851,8 @@ margin-bottom: 3%;
     #happyClients  img{
         inline-size: 50px;
         margin: 3px 3px;
+        max-width:100%;
+        max-height:100%;
     }
     footer{
         width: 100%;
