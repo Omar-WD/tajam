@@ -170,7 +170,7 @@ nav ul li a:hover {
     background-image: url("./images/bgk-header.png");
     background-size: cover;
     background-position: center;
-    height: 750px;
+    min-height: 750px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -183,6 +183,12 @@ nav ul li a:hover {
     width: 45vw;
     text-align: center;
     margin-top: 50px;
+}
+
+@media only screen and (max-width:800px) {
+    .herotext {
+        width: 80vw;
+    }
 }
 
 .solid {
@@ -226,6 +232,8 @@ nav ul li a:hover {
     width: 100%;
 }
 
+
+
 #our-story .story {
     display: flex;
     flex-direction: row;
@@ -236,6 +244,7 @@ nav ul li a:hover {
 }
 
 .story img {
+    flex-wrap: wrap;
     height: 300px;
     padding-top: 50px;
     margin: 0 50px 0 50px;
@@ -280,6 +289,21 @@ nav ul li a:hover {
     color: black;
 }
 
+@media only screen and (max-width:800px) {
+    #our-story {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        justify-content: center;
+    }
+
+    .story img {
+        height: 300px;
+        padding-top: 50px;
+        margin: 0 50px 0 50px;
+    }
+
+}
 
 #watch {
     background-image: url("./images/bgk-middle.png");
@@ -430,10 +454,10 @@ hr {
 #team-section {
     background-image: url("./images/bgk-header.png");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
+
+
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     padding-bottom: 200px;
 }
 
@@ -466,7 +490,7 @@ hr {
 
 .team-member-card {
     width: 200px;
-    height: 90%;
+    height: 230px;
     margin: 0px 10px;
     background-color: transperent;
     border: 0.5px solid rgba(255, 255, 255, 0.5);
@@ -531,7 +555,7 @@ hr {
 }
 
 
-.hire-container > a:hover {
+.hire-container>a:hover {
     background-color: #74c8ce;
     color: black;
 }
@@ -593,7 +617,8 @@ hr {
     padding: 10px;
     width: 35%;
 }
-#contactForm button:hover{
+
+#contactForm button:hover {
     background-color: #74c8ce;
     border-color: white;
     color: white;
@@ -634,11 +659,8 @@ hr {
 footer {
     background-image: url("./images/bgk-footer.png");
     background-size: cover;
-    left: 0;
-    right: 0;
     bottom: 0;
-    height: 350px;
-    width: 100%;
+
     color: white;
     font-weight: lighter;
     font-size: 90%;
@@ -752,9 +774,10 @@ footer {
 }
 
 #subs img:hover {
-background-color: white;
-cursor: pointer;
+    background-color: white;
+    cursor: pointer;
 }
+
 #socialIcons {
     display: flex;
     flex-direction: row;
@@ -773,6 +796,7 @@ cursor: pointer;
     margin: auto;
     cursor: pointer;
 }
+
 #footer2box {
     display: inline-flex;
     flex-direction: row;
@@ -798,7 +822,8 @@ cursor: pointer;
     margin-right: 5%;
     padding: 0% 2% 0% 1%;
 }
-#ft2links a:hover{
+
+#ft2links a:hover {
     color: white;
     text-decoration: underline;
     font-size: 100%;
@@ -824,13 +849,13 @@ cursor: pointer;
 @media only screen and (max-width: 896px) {
 
     #team-section {
-        height: 950px;
+        min-height: 950px;
     }
 
     .team-member-card {
-        height: 60%;
+        height: 230px;
         margin: 15px 10px;
-    } 
+    }
 
     .hire-container p {
         padding-top: 160px;
@@ -843,6 +868,7 @@ cursor: pointer;
 
 
 }
+
 @media only screen and (max-width: 800px) {
 
     .expertise-firstRow>div,
@@ -851,92 +877,120 @@ cursor: pointer;
     }
 }
 
-@media only screen and (max-width: 1190px) and (min-width:1020px){
-    #ContactUs, #footer1box, #footer2box{
+@media only screen and (max-width: 1190px) and (min-width:1020px) {
+
+    #ContactUs,
+    #footer1box,
+    #footer2box {
         width: 70%;
         column-gap: 2%;
     }
-    footer{
+
+    footer {
         height: 360px;
     }
-    #happyClients  img{
-        max-width:100%;
-        max-height:100%;
+
+    #happyClients img {
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
-@media only screen and (max-width: 1019px) and (min-width:830px){
-    #ContactUs, #footer1box, #footer2box{
+@media only screen and (max-width: 1019px) and (min-width:830px) {
+
+    #ContactUs,
+    #footer1box,
+    #footer2box {
         width: 90%;
         column-gap: 2%;
     }
-    footer{
+
+    footer {
         height: 360px;
     }
-    #happyClients  img{
-        max-width:100%;
-        max-height:100%;
+
+    #happyClients img {
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
-@media only screen and (max-width: 829px) and (min-width:790px){
-    #ContactUs, #footer1box, #footer2box{
+@media only screen and (max-width: 829px) and (min-width:790px) {
+
+    #ContactUs,
+    #footer1box,
+    #footer2box {
         width: 95%;
         column-gap: 3%;
     }
-    
-    footer{
+
+    footer {
         height: 360px;
 
     }
-    #happyClients  img{
-        max-width:100%;
-        max-height:100%;
+
+    #happyClients img {
+        max-width: 100%;
+        max-height: 100%;
     }
 }
-@media only screen and (max-width: 789px) and (min-width:680px){
-    #ContactUs, #footer1box, #footer2box{
+
+@media only screen and (max-width: 789px) and (min-width:680px) {
+
+    #ContactUs,
+    #footer1box,
+    #footer2box {
         width: 95%;
-        
+
     }
 
-    footer{
+    footer {
         height: 360px;
     }
+
     #footer1box {
         column-gap: 0.5%;
 
     }
+
     #footer2box {
-margin-bottom: 3%;
+        margin-bottom: 3%;
     }
+
     #ft2links {
-         width: 55%;
+        width: 55%;
     }
-    #©{
+
+    #© {
         width: 44%;
     }
-    #happyClients  img{
-        max-width:100%;
-        max-height:100%;
+
+    #happyClients img {
+        max-width: 100%;
+        max-height: 100%;
     }
 
 }
-@media only screen and (min-width:680px){
-#happyClients  img{
-    inline-size: 80px;
-    margin: 0px 3px;
-    max-width:100%;
-    max-height:100%;
+
+@media only screen and (min-width:680px) {
+    #happyClients img {
+        inline-size: 80px;
+        margin: 0px 3px;
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
-}
+
 @media only screen and (max-width: 679px) {
-    #ContactUs, #footer1box, #footer2box{
+
+    #ContactUs,
+    #footer1box,
+    #footer2box {
         width: 90%;
         font-family: Roboto;
     }
 
-    #ContactUs{
+    #ContactUs {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -944,7 +998,7 @@ margin-bottom: 3%;
         height: 516px;
     }
 
-    #contactForm{
+    #contactForm {
         height: auto;
         width: 80%;
         justify-content: space-evenly;
@@ -952,26 +1006,31 @@ margin-bottom: 3%;
         margin-left: auto;
         margin-right: auto;
     }
-    #contactForm h3{
+
+    #contactForm h3 {
         font-size: 15px;
         margin-bottom: 5px;
     }
-    #contactForm input{
+
+    #contactForm input {
         height: 28px;
         padding-left: 10px;
         margin: 5px 0px;
         width: 70%;
     }
-    #contactForm textarea{
+
+    #contactForm textarea {
         height: 220px;
         padding-left: 5px;
     }
+
     #contactForm button {
         height: 30px;
         width: 100px;
         margin-bottom: 10%;
         margin-top: 10px;
     }
+
     #contactForm ::placeholder {
         color: #6b4c4c7e;
         font-size: 80%;
@@ -985,6 +1044,7 @@ margin-bottom: 3%;
         padding: 5px 5px;
         align-content: space-evenly;
     }
+
     #happyClients img{
         margin-bottom: 10px;
         inline-size: 44px;
@@ -993,6 +1053,7 @@ margin-bottom: 3%;
         display: none;
     }
     footer{
+
         width: 100%;
         height: auto;
         display: flex;
@@ -1006,44 +1067,52 @@ margin-bottom: 3%;
         height: auto;
         margin: 5% 2% 5% 2%;
     }
+
     #compLogo {
         display: none;
     }
+
     #shortText {
-        display: none ;
+        display: none;
     }
+
     #footer1box span {
         display: none;
     }
-    #addressblock{
+
+    #addressblock {
         font-size: small;
         width: 220px;
         height: 64px;
         margin-top: 21px;
         align-self: center;
     }
+
     #addressblock p {
         width: 82%;
         line-height: 16px;
     }
 
-    #communication{
+    #communication {
         width: 358px;
         margin: 0px auto;
     }
-    #subs{
+
+    #subs {
         height: 30px;
         margin-bottom: 30px;
         width: 246px;
         align-self: center;
     }
-    #subs img{
+
+    #subs img {
         height: 30px;
         margin-top: 10px;
         margin-left: 1px;
         padding: 2% 3%;
     }
-    #subs input{
+
+    #subs input {
         width: 195px;
         height: 30px;
         font-size: 13px;
@@ -1051,6 +1120,7 @@ margin-bottom: 3%;
         margin-right: 3px;
         margin-top: 10px;
     }
+
     #socialIcons {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -1059,14 +1129,17 @@ margin-bottom: 3%;
         position: relative;
         justify-content: space-evenly;
     }
+
     #socialIcons img {
         padding: 3%;
     }
+
     #footer2box {
         display: flex;
         flex-direction: column;
         height: auto;
         width: 100%;
+
         margin-top:6px;
         margin-bottom: 2%;
         align-items: center;
@@ -1074,7 +1147,8 @@ margin-bottom: 3%;
         justify-content: center;
         bottom: 0%;
     }
-    #ft2links{
+
+    #ft2links {
         height: auto;
         width: 100%;
         font-size: small;
@@ -1086,7 +1160,8 @@ margin-bottom: 3%;
         margin: 0px;
         line-height: 20px;
     }
-    #©{
+
+    #© {
         font-size: xx-small;
         text-align: center;
         align-self: center;
