@@ -51,8 +51,6 @@ button {
     margin: 0 10px 0 10px;
 }
 
-
-
 nav ul {
     display: flex;
     justify-content: center;
@@ -81,8 +79,19 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width:800px) {
+    .navbar {
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .navlogo {
+        margin-left: 50px;
+    }
+
     .hamburger-menu {
         display: inline;
+        font-size: 30px;
+        margin-right: 50px;
     }
 
     .hamburger-menu a {
@@ -93,78 +102,6 @@ nav ul li a:hover {
         display: none;
     }
 }
-
-/* HamburgerNAV Start */
-
-/* @media (max-width: 768px) {
-    nav ul {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-}
-
-.hamburger-menu {
-    display: none;
-    margin-right: 20px;
-}
-
-.hamburger-menu a {
-    display: block;
-    font-size: 20px;
-    color: white;
-}
-
-.hamburger-menu i {
-    margin: 0 5px 0 0;
-}
-
-.hamburger-menu input {
-    display: none;
-}
-
-.hamburger-menu label {
-    display: block;
-    cursor: pointer;
-}
-
-.hamburger-menu label i {
-    font-size: 30px;
-    color: white;
-}
-
-.hamburger-menu ul {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px 0;
-}
-
-.hamburger-menu ul li {
-    margin: 10px 0;
-    text-align: center;
-}
-
-.hamburger-menu ul li a {
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-}
-
-@media only screen and (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-    }
-} */
-
-/* HamburgerNAV End */
 
 .hero {
     background-image: url("./images/bgk-header.png");
@@ -228,13 +165,12 @@ nav ul li a:hover {
     color: black;
 }
 
-#our-story {
-    width: 100%;
-}
+
 
 
 
 #our-story .story {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -244,9 +180,8 @@ nav ul li a:hover {
 }
 
 .story img {
-    flex-wrap: wrap;
     height: 300px;
-    padding-top: 50px;
+    padding-bottom: 30px;
     margin: 0 50px 0 50px;
 }
 
@@ -255,8 +190,8 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px;
+
 }
 
 #our-story h2 {
@@ -290,17 +225,38 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width:800px) {
-    #our-story {
+    #our-story .story {
         display: flex;
         flex-direction: column;
         width: 80vw;
         justify-content: center;
+        align-content: center;
+    }
+
+    .our-story-text {
+        max-width: 70%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .our-story-text h2 {
+        max-width: 70%;
+        margin: auto auto;
+        text-align: center;
     }
 
     .story img {
-        height: 300px;
-        padding-top: 50px;
-        margin: 0 50px 0 50px;
+        height: 200px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    .our-story-text button {
+        max-width: 70%;
+        margin: 0;
+        text-align: center;
+        margin: auto;
     }
 
 }
@@ -325,7 +281,7 @@ nav ul li a:hover {
 }
 
 #watch h2 {
-    font-family: 'ROBOTO';
+    font-family: 'Roboto';
     font-weight: 400;
 }
 
@@ -345,11 +301,19 @@ nav ul li a:hover {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    opacity: 70%;
 }
 
 .totop img {
     width: 30px;
     height: 30px;
+}
+
+@media only screen and (max-width:800px) {
+    .totop {
+        right: 25px;
+        bottom: 25px;
+    }
 }
 
 /* Alina Ende */
@@ -390,10 +354,10 @@ hr {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto; 
+    margin: 0 auto;
     max-width: 1000px;
 }
-  
+
 .grid-item {
     border: 0.5px solid #cccccc;
     padding: 30px;
@@ -402,7 +366,7 @@ hr {
 }
 
 .grid-item:nth-child(2) {
-      border-top: none;
+    border-top: none;
 }
 
 .grid-item:nth-child(5) {
@@ -410,11 +374,15 @@ hr {
     border-top: none;
 }
 
-.grid-item:last-child, .grid-item:first-child, .grid-item:nth-child(3), .grid-item:nth-child(4){
+.grid-item:last-child,
+.grid-item:first-child,
+.grid-item:nth-child(3),
+.grid-item:nth-child(4) {
     border: none;
 }
 
-.grid-item:first-child, .grid-item:nth-child(3) {
+.grid-item:first-child,
+.grid-item:nth-child(3) {
     border-bottom: 0.5px solid #cccccc;
 }
 
@@ -439,12 +407,12 @@ hr {
 @media only screen and (max-width: 896px) {
 
     .grid-item h3 {
-    height: 40px;
-    display: block;
-    margin: 0 auto 10px;
+        height: 40px;
+        display: block;
+        margin: 0 auto 10px;
     }
 }
-  
+
 @media only screen and (max-width: 390px) {
 
     #expertise-section>div>h2 {
@@ -456,8 +424,8 @@ hr {
     }
 
     .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-    
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
     .grid-item h3 {
@@ -474,17 +442,21 @@ hr {
     .grid-item:nth-child(2) {
         border-right: none;
     }
+
     .grid-item:nth-child(4) {
         border-bottom: 0.5px solid #cccccc;
         border-left: 0.5px solid #cccccc;
     }
+
     .grid-item:nth-child(5) {
         border: none;
     }
+
     .grid-item:last-child {
         border-left: 0.5px solid #cccccc;
     }
 }
+
 /* end expertise section */
 
 /* Ermias Start - team section */
@@ -504,7 +476,7 @@ hr {
     padding-top: 100px;
 }
 
-#team-section > div > p {
+#team-section>div>p {
     font-family: "Playfair Display";
     font-weight: 200;
     text-align: center;
@@ -594,6 +566,7 @@ hr {
     background-color: #74c8ce;
     color: black;
 }
+
 /* end team section */
 
 #ContactUs {
@@ -701,7 +674,7 @@ footer {
     color: white;
     font-weight: lighter;
     font-size: 90%;
-    font-family: Verdana;
+    font-family: 'Roboto';
     display: flex;
     flex-direction: column;
 }
@@ -885,7 +858,7 @@ footer {
 
 @media only screen and (max-width: 896px) {
 
-    #expertise-section > div {
+    #expertise-section>div {
         padding-right: 20px;
         padding-left: 20px;
     }
@@ -901,10 +874,10 @@ footer {
 
     #team-section {
         min-height: 400px;
-       
+
     }
 
-    #team-section > div {
+    #team-section>div {
         padding-right: 20px;
         padding-left: 20px;
     }
@@ -990,118 +963,131 @@ footer {
     }
 }*/
 
-@media only screen and (max-width: 999px) and (min-width:680px){
-    
-        footer {
-            height: auto;
-            display: flex;
-            flex-direction: column
-        }
-        #footer1box {
-            column-gap: 0.5%;
-            padding-bottom: 3px;
-            width: 85%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            column-gap: 3%;
-            line-height: 3vh;
-            margin: 3% auto 3% auto;
-            align-items: center;
-        }
-        #footer1box span{
-            display: none;
-        }
-        #logoSection {
-            display: inline-flex;
-            grid-template-columns: auto auto;
-            width: 30%;
-            align-content: stretch;
-            justify-content: center;
-            align-items: flex-end;
-            justify-items: center;
-        }
+@media only screen and (max-width: 999px) and (min-width:680px) {
 
-        #compLogo {
-            margin-right: inherit;
-            height: 55px;
-            width: auto;
-            margin-bottom: 10px;
-        }
-        #shortText {
-            font-family: Roboto;
-            width: 65%;
-            height: 80px;
-            text-align: center;
-            margin: 1% 0%;
-        }
-        #addressblock {
-            display: grid;
-            grid-template-columns: auto auto;
-            width: 43%;
-            height: auto;
-            align-items: center;
-            justify-items: center;
-        }
-        #addressblock p {
-            width: 80%;
-            padding: 7px 0px;
-        }
-        communication {
-            display: flex;
-            flex-direction: column;
-        }
-        #subs {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            justify-content: flex-start;
-            margin: 19px 0px;
-        }
-        #subs input {
-            height: 45px;
-            background: transparent;
-            border: 1px solid lightgray;
-            font-size: 16px;
-            color: white;
-            padding-left: 4px;
-            width: 75%;
-        }
-        #subs img {
-            margin-left: 2%;
-            height: 45px;
-            padding: 4% 7%;
-            background-color: rgb(255, 255, 255, 0.44);
-            width: 23%;
-        }
-        #footer2box {
-            margin-bottom: 1%;
-            width: 85%;
-            height: auto;
-            display:contents;
-        }
-        #ft2links {
-            width: 56%;
-            text-align: center;
-            margin-bottom: 21px;
-            margin-top: 21px;
-            align-self: center;
-            display: flex;
-            justify-content: space-around;
-        }
-        #ft2links a{
-            margin-right: 0px;
-            padding: 0px 4px;
-        }
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column
+    }
 
-        #© {
-            width: 44%;
-            font-size: x-small;
-            text-align: center;
-            align-self: center;
-            margin-bottom: 13px ;
-            height: auto;
-        }
+    #footer1box {
+        column-gap: 0.5%;
+        padding-bottom: 3px;
+        width: 85%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        column-gap: 3%;
+        line-height: 3vh;
+        margin: 3% auto 3% auto;
+        align-items: center;
+    }
+
+    #footer1box span {
+        display: none;
+    }
+
+    #logoSection {
+        display: inline-flex;
+        grid-template-columns: auto auto;
+        width: 30%;
+        align-content: stretch;
+        justify-content: center;
+        align-items: flex-end;
+        justify-items: center;
+    }
+
+    #compLogo {
+        margin-right: inherit;
+        height: 55px;
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    #shortText {
+        font-family: Roboto;
+        width: 65%;
+        height: 80px;
+        text-align: center;
+        margin: 1% 0%;
+    }
+
+    #addressblock {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 43%;
+        height: auto;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #addressblock p {
+        width: 80%;
+        padding: 7px 0px;
+    }
+
+    communication {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #subs {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        margin: 19px 0px;
+    }
+
+    #subs input {
+        height: 45px;
+        background: transparent;
+        border: 1px solid lightgray;
+        font-size: 16px;
+        color: white;
+        padding-left: 4px;
+        width: 75%;
+    }
+
+    #subs img {
+        margin-left: 2%;
+        height: 45px;
+        padding: 4% 7%;
+        background-color: rgb(255, 255, 255, 0.44);
+        width: 23%;
+    }
+
+    #footer2box {
+        margin-bottom: 1%;
+        width: 85%;
+        height: auto;
+        display: contents;
+    }
+
+    #ft2links {
+        width: 56%;
+        text-align: center;
+        margin-bottom: 21px;
+        margin-top: 21px;
+        align-self: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #ft2links a {
+        margin-right: 0px;
+        padding: 0px 4px;
+    }
+
+    #© {
+        width: 44%;
+        font-size: x-small;
+        text-align: center;
+        align-self: center;
+        margin-bottom: 13px;
+        height: auto;
+    }
 
 }
 
@@ -1168,7 +1154,8 @@ footer {
         font-size: 80%;
         padding-left: 5%;
     }
-    #happyClients{
+
+    #happyClients {
         height: 60px;
         width: 100%;
         margin: auto 0px 0px 0px;
@@ -1176,91 +1163,103 @@ footer {
         padding: 5px 5px;
         align-content: space-evenly;
     }
+
     #happyClients h3 {
         display: none;
     }
+
     #happyClients #a {
         width: 51px;
         height: 16px;
         margin: auto auto;
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         padding: 4px;
 
     }
+
     #happyClients #b {
         width: 56px;
         height: 16px;
         margin: auto auto;
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         padding: 4px;
     }
+
     #happyClients #c {
         width: 69px;
         height: 16px;
         margin: auto auto;
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         padding: 2px;
     }
+
     #happyClients #d {
         width: 53px;
         height: 16px;
         margin: auto auto;
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         padding: 3px;
     }
+
     #happyClients #e {
         width: 70px;
         height: 16px;
         margin: auto auto;
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         padding: 3px;
     }
+
     #happyClients #f {
         width: 50px;
         height: 18px;
         margin: auto auto;
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         padding: 2px;
     }
+
     #happyClients #g {
         width: 50px;
         height: 32px;
         margin: auto auto;
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         padding: 2px;
     }
+
     #happyClients #h {
         width: 50px;
         height: 23px;
         margin: auto auto;
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         padding: 1px;
     }
+
     #happyClients #i {
         width: 55px;
         height: 28px;
         margin: auto auto;
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         padding: 3px;
     }
+
     #happyClients #j {
         width: 55px;
         height: 28px;
         margin: auto auto;
-        max-width:100%;
-        max-height:100%;
+        max-width: 100%;
+        max-height: 100%;
         padding: 4px;
     }
-    footer{
+
+    footer {
 
         width: 100%;
         height: 338px;
@@ -1348,7 +1347,7 @@ footer {
         height: 87px;
         width: 100%;
 
-        margin-top:6px;
+        margin-top: 6px;
         align-items: center;
         align-self: center;
         justify-content: center;
@@ -1363,6 +1362,7 @@ footer {
         margin-bottom: 16px;
         margin-top: 8px;
     }
+
     #ft2links #privacyLink {
         padding-right: 0%;
         margin-right: 0%;
@@ -1382,6 +1382,7 @@ footer {
     #ContactUs {
         width: 85%;
     }
+
     #happyClients h3 {
         padding-left: 8%;
     }
