@@ -422,8 +422,10 @@ hr {
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
     font-size: medium;
+    height: 30px;
+    display: block;
+    margin: 0 auto 0px;
 }
 
 .grid-item img {
@@ -433,8 +435,25 @@ hr {
     margin: 0 auto 20px;
     margin-bottom: 30px;
 }
+
+@media only screen and (max-width: 896px) {
+
+    .grid-item h3 {
+    height: 40px;
+    display: block;
+    margin: 0 auto 10px;
+    }
+}
   
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 390px) {
+
+    #expertise-section>div>h2 {
+        font-size: x-large;
+    }
+
+    #expertise-section>div>p {
+        font-size: large;
+    }
 
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
