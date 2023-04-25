@@ -354,24 +354,27 @@ nav ul li a:hover {
 
 /* Alina Ende */
 
-
+/* Ermias Start - expertise section */
 #expertise-section {
     width: 100%;
     margin-bottom: 100px;
 }
 
 #expertise-section>div>h2 {
+    font-size: xx-large;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #expertise-section>div>p {
+    font-size: large;
     font-weight: 400;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
+    line-height: 170%;
 }
 
 hr {
@@ -381,84 +384,97 @@ hr {
     height: 0.5px;
     background-color: gray;
     border: none;
+    margin-bottom: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto; 
+    max-width: 1000px;
+}
+  
+.grid-item {
+    border: 0.5px solid #cccccc;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-item:nth-child(2) {
+      border-top: none;
+}
+
+.grid-item:nth-child(5) {
+    border-bottom: none;
+    border-top: none;
+}
+
+.grid-item:last-child, .grid-item:first-child, .grid-item:nth-child(3), .grid-item:nth-child(4){
+    border: none;
+}
+
+.grid-item:first-child, .grid-item:nth-child(3) {
+    border-bottom: 0.5px solid #cccccc;
+}
+
+.grid-item h3 {
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: 40px;
+    display: block;
+    margin: 0 auto 20px;
     margin-bottom: 30px;
 }
+  
+@media only screen and (max-width: 767px) {
 
-.exp-container {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    
+    }
+
+    .grid-item h3 {
+        font-size: small;
+        height: 40px;
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    .grid-item p {
+        font-size: small;
+    }
+
+    .grid-item:nth-child(2) {
+        border-right: none;
+    }
+    .grid-item:nth-child(4) {
+        border-bottom: 0.5px solid #cccccc;
+        border-left: 0.5px solid #cccccc;
+    }
+    .grid-item:nth-child(5) {
+        border: none;
+    }
+    .grid-item:last-child {
+        border-left: 0.5px solid #cccccc;
+    }
 }
+/* end expertise section */
 
-.expertise-firstRow,
-.expertise-secondRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
-}
-
-#seperator {
-    width: 60px;
-    margin-right: auto;
-    margin-left: auto;
-    height: 1px;
-    background-color: #e6e6e6;
-    border: none;
-    margin: 10px;
-}
-
-.expertise-firstRow>div,
-.expertise-secondRow>div {
-    width: 20%;
-    height: 100%;
-    border-right: 1px solid #e6e6e6;
-}
-
-.expertise-firstRow>div:last-child,
-.expertise-secondRow>div:last-child {
-    border-right: none;
-}
-
-.expertise-image-container {
-    width: 100%;
-    height: 50%;
-}
-
-
-.expertise-firstRow>div>h3,
-.expertise-secondRow>div>h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.2px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-
-.expertise-firstRow>div>p,
-.expertise-secondRow>div>p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    text-align: center;
-}
-
+/* Ermias Start - team section */
 #team-section {
     background-image: url("./images/bgk-header.png");
     background-size: cover;
-
-
     width: 100%;
     min-height: 700px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 #team-section h2 {
@@ -469,7 +485,7 @@ hr {
     padding-top: 100px;
 }
 
-#team-section>div>p {
+#team-section > div > p {
     font-family: "Playfair Display";
     font-weight: 200;
     text-align: center;
@@ -559,6 +575,7 @@ hr {
     background-color: #74c8ce;
     color: black;
 }
+/* end team section */
 
 #ContactUs {
     display: flex;
@@ -849,8 +866,28 @@ footer {
 
 @media only screen and (max-width: 896px) {
 
+    #expertise-section > div {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .expertise-firstRow>div,
+    .expertise-secondRow>div {
+        width: 27%;
+    }
+
+    #seperator {
+        width: 80%;
+    }
+
     #team-section {
-        min-height: 950px;
+        min-height: 400px;
+       
+    }
+
+    #team-section > div {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .team-member-card {
@@ -859,12 +896,9 @@ footer {
     }
 
     .hire-container p {
-        padding-top: 160px;
-    }
-
-    .expertise-firstRow>div,
-    .expertise-secondRow>div {
-        width: 27%;
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
 
@@ -875,6 +909,10 @@ footer {
     .expertise-firstRow>div,
     .expertise-secondRow>div {
         width: 100%;
+    }
+
+    #seperator {
+        width: 90%;
     }
 }
 
